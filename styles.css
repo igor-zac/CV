@@ -1,0 +1,391 @@
+body {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #F5F4F2;
+	color:#1F3334;
+}
+
+main {
+	min-height: 100vh;
+}
+
+/* || HEADER 
+-------------------------------------------------------------------------------------------*/
+
+header {
+	height: 100vh;
+	min-height: 800px;
+	background-image: url(images/montagnes.jpg);
+	display: flex;
+	margin-bottom: 0;
+}
+
+.header_vertical {
+	height: 100%;
+	opacity: 0.8;
+}
+
+.nom {
+	font-weight: 500;
+	font-size: 3.6em;
+}
+
+.age_lieu {
+	font-size: 1.2em;
+}
+
+.picture {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	background-image: radial-gradient(circle at center, #ffffff, transparent);
+	position: absolute;
+	top: 40px;
+	right: 40px;
+
+}
+
+.picture > img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.profilePic {
+	object-fit: contain;
+}
+
+.header_horizontal {
+	padding: 40px;
+}
+
+.header_horizontal > h1 {
+	position: absolute;
+	bottom: 0px;
+	font-weight: 600;
+	font-size: 3em;
+	color: #F5F4F2;
+}
+
+/* || BODY
+---------------------------------------------------------------------------- */
+
+/* || NAVIGATION INTERNE
+-----------------------------------------------------------------------*/
+.navigation_interne {
+	width: 70%;
+	max-width: 1000px;
+	height: 40px;
+	position: sticky;
+	top: 0;
+	margin-top: 0;
+	
+	color: #F5F4F2;
+}
+
+.navigation_interne > ul {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	height: inherit;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 2px solid #F5F4F2;
+	border-top: none;
+
+	
+}
+
+.navigation_interne > ul > li {
+	height: inherit;
+	line-height: 40px;
+	display: inline-block;
+	flex: 1;
+	text-align: center;
+	background: linear-gradient(#1C2729,  #3C4C52);
+
+}
+
+.navigation_interne > ul > li:hover, .navigation_interne > ul > .page {
+	background: none;
+	background-color: #4B5356;
+}
+
+
+
+.navigation_interne > ul > li > a{
+	display: block;
+	height: 100%;
+}
+
+a:link, a:visited {
+	color: #F5F4F2;
+	text-decoration: none;
+}
+
+/*---------------------------------------------------------------------*/
+main {
+	padding-bottom: 40px;
+}
+
+main > div {
+	width: 80%;
+	margin: auto;
+	margin-top: 80px;
+
+	max-width: 1000px;
+}
+
+ div > h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em;
+	padding: 20px;
+}
+
+
+/* || TABLEAU EXPERIENCES
+-------------------------------------------------------------------------*/
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 800px;
+	font-size: 0.9em;
+	margin: 0 auto;
+}
+
+
+th {
+	background-color: #3C4C52;
+	color: #F5F4F2;
+	height: 40px;
+}
+
+td {
+	height: 40px;
+	padding: 3px;
+}
+
+.xp {
+
+}
+
+
+.lien {
+	text-align: center;
+}
+
+.lien a:link, .lien a:visited {
+	color: #1F3334;
+	text-decoration: underline;
+}
+
+.colored, .colored a:link, .colored a:visited {
+	background-color: #647278;
+	color: #F5F4F2;
+}
+
+/* || COMPETENCES
+--------------------------------------------------------------*/
+
+.colored_div {
+	width: 1000px;
+	min-width: 800px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	background-color: #647278;
+	color: #F5F4F2;
+}
+
+
+.colored_div > div {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+}
+
+.informatique, .electronique {
+	background-color: #758187;
+	padding: 10px;
+	width:50%;
+	margin: 30px;
+}
+
+h3 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+/* || LANGUES
+--------------------------------------------------------------*/
+.langue {
+	width: 50%;
+}
+
+
+
+
+
+/* || FORMULAIRE
+----------------------------------------------------------------*/
+
+
+form {
+	width: 80%;
+	margin: auto;
+}
+
+form > div {
+	
+	width: 600px;
+	margin: auto;
+	display: flex;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+
+select, input, textarea {
+	width: inherit;
+	display: block;
+	padding: 10px;
+	margin: auto;
+}
+
+input, textarea {
+	box-sizing: border-box;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	margin: auto;
+	background-color: #1F3334;
+	border: none;
+	color: #F5F4F2;
+	font-size: 1em;
+}
+.radio {
+	display: flex;
+	flex-direction: row;
+	width:50%;
+}
+
+.radio > div {
+	flex: 1;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.radio > div > label {
+	text-align: center;
+}
+
+textarea {
+	resize: none;
+	height: 200px;
+}
+
+label {
+	margin: 5px;	
+}
+
+
+/* || FOOTER
+-------------------------------------------------------------------*/
+footer {
+	height: 80px;
+	background-color: #1F3334;
+	color: #F5F4F2;
+	font-size: 1em;
+	display: flex;
+	margin-bottom: 0;
+}
+
+.favicons img {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	margin: 15px;
+	margin-top: 20px;
+}
+
+.favicons {
+	position: absolute;
+	right: 10px;
+	width: 250px;
+	height: inherit;
+	margin-right: 0px;
+}
+
+footer > p {
+	padding: 20px;
+	line-height: 40px;
+	font-size: 1em;
+}
+
+/* || HOBBIES
+------------------------------------------------------------*/
+blockquote {
+	margin-top: 160px;
+}
+
+blockquote > *{
+	background: none;
+	background-color: #F5F4F2;
+	color: #1F3334;
+	width: 60%;
+	min-width: 400px;	
+	margin: auto;
+}
+
+blockquote p{
+	font-family: "Libre Baskerville";
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.colored_div > * {
+	width: 80%;
+	margin: auto;
+}
+
+iframe {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+/* || VIDEO
+---------------------------------------------------------------*/
+
+.text {
+	width: 60%;
+	min-width: 800px;
+}
+
+.video {
+	width: 250px;
+	margin: auto;
+}
+
+video {
+	border: 1px solid #1F3334;
+	background-color: white;
+}
+
+#hobby {
+	color: #1F3334;
+	text-decoration: underline;
+}
